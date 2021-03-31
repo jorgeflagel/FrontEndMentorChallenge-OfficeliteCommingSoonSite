@@ -133,9 +133,7 @@ function Form(props) {
                     pack: string(),
                     tel: string(),
                     company: string()
-                        .min(3, 'Must be at least 3 characters')
                         .max(15, 'Must be 15 characters or less')
-                        .required('Required')
                 })}
 
                 onSubmit={(values, { setSubmitting, resetForm }) => {
