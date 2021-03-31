@@ -142,7 +142,7 @@ function Form(props) {
                         resetForm();
                         setSubmitting(false);
 
-                    }, 1000);
+                    }, 2000);
                 }}
                 >
                 {({

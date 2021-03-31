@@ -30,12 +30,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Previos of the main page](./screenshot1.jpg  )
+![Previos of the main page](./screenshot1.png  )
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://frontendmentorchallenges-officelitecommingsoonsite.vercel.app/](https://frontendmentorchallenges-officelitecommingsoonsite.vercel.app/)
 
 ## My process
 

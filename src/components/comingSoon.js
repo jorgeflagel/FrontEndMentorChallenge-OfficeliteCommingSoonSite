@@ -133,6 +133,7 @@ function ComingSoon(props){
     const [remaining, setRemaining] = useState((date.total >= 999 ? date : {days: 0, hours: 0, minutes: 0, seconds: 0}));
 
     useEffect(() => {
+        
         if (date.total >= 1000) {
             const startInterval = setInterval(() => {
                 const t = getTimeRemaining(deadLine);
@@ -142,7 +143,7 @@ function ComingSoon(props){
                 };
             },1000);
         };
-    }, [date, deadLine]);
+    }, []);
 
     const options = {  day: 'numeric', year: 'numeric', month: 'short',};
     const commingDate = DEADLINE.toLocaleDateString('en-GB', options);
