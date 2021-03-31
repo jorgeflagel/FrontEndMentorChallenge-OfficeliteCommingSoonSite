@@ -37,7 +37,7 @@ const InputsContainer = styled.div`
 `
 
 function Input(props) {
-    const [field, meta] = useField(props);
+    const [meta] = useField(props);
 
     return(
         <>
@@ -142,7 +142,7 @@ function Form(props) {
                         resetForm();
                         setSubmitting(false);
 
-                    }, 2000);
+                    }, 1000);
                 }}
                 >
                 {({

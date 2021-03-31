@@ -142,7 +142,7 @@ function ComingSoon(props){
                 };
             },1000);
         };
-    }, []);
+    }, [date, deadLine]);
 
     const options = {  day: 'numeric', year: 'numeric', month: 'short',};
     const commingDate = DEADLINE.toLocaleDateString('en-GB', options);
