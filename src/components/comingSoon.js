@@ -51,12 +51,28 @@ const Number = styled.p`
     font-size: 2rem;
     font-weight: 700;
     line-height: 3rem;
+    @media ${devices.tablet} {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+    @media ${devices.pc} {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
 `;
 
 const Text = styled.p`
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 1.75rem;
+    @media ${devices.tablet} {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+    @media ${devices.pc} {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
 `;
 
 const Card = ({className, number, text}) => {

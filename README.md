@@ -20,17 +20,19 @@ This is a solution to the [Officelite coming soon site challenge on Frontend Men
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+- View the optimal layout for the site depending on their device's screen size (done)
+- See hover states for all interactive elements on the page (done)
 - See error states when the contact form is submitted if:
-  - The `Name` and/or `Email Address` fields are empty
-  - The `Email Address` is not formatted correctly
-- **Bonus**: See a live countdown timer that ticks down every second
+  - The `Name` and/or `Email Address` fields are empty (done)
+  - The `Email Address` is not formatted correctly (done)
+- **Bonus**: See a live countdown timer that ticks down every second (done)
 - **Bonus**: See a custom-styled `select` form control in the sign-up form
 
 ### Screenshot
 
-![Previos of the main page](./screenshot1.png  )
+![Previous of the Main-page](./screenshot1.png)
+![Previous of the Form-page](./screenshot2.png)
+
 
 ### Links
 
