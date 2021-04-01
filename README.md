@@ -31,7 +31,7 @@ Users should be able to:
 ### Screenshot
 
 ![Previous of the Main-page](./screenshot1.png)
-![Previous of the Form-page](./screenshot2 n.png)
+![Previous of the Form-page](./screenshot2n.png)
 
 
 ### Links
