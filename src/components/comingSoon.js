@@ -52,12 +52,12 @@ const Number = styled.p`
     font-weight: 700;
     line-height: 3rem;
     @media ${devices.tablet} {
-        font-size: 4rem;
-        line-height: 3rem;
+        font-size: 3rem;
+        line-height: 4rem;
     }
     @media ${devices.pc} {
-        font-size: 4rem;
-        line-height: 3rem;
+        font-size: 3rem;
+        line-height: 4rem;
     }
 `;
 
