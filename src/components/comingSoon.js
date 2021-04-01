@@ -26,7 +26,7 @@ const Title = styled.h2`
     line-height: 3rem;
     color: ${props => props.theme.colorPrimaryContrast};
     ${props => {
-        switch(props.type){
+        switch(props.variant){
             case("light"):
                 return css`
                     color: ${props => props.theme.colorPrimaryContrast};
@@ -92,7 +92,7 @@ const CardStyled = styled(Card)`
     justify-content: center;
     border-radius: 15px;
     ${props => {
-        switch(props.type){
+        switch(props.variant){
             case("light"):
                 return css`
                     background-color: ${props.theme.colorSecondary};
@@ -166,7 +166,7 @@ function ComingSoon(props){
 
     return(
         <ComingSoonStyled>
-            <Title type={props.type}>Coming <span>{commingDate}</span></Title>
+            <Title variant={props.type}>Coming <span>{commingDate}</span></Title>
             <Cards>
                 <CardStyled type={props.type} number={remaining.days} text={"days"}/>
                 <CardStyled type={props.type} number={remaining.hours} text={"hours"}/>
