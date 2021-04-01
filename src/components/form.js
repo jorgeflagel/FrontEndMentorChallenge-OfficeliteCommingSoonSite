@@ -168,7 +168,7 @@ function Form(props) {
                                 <Input type="text" name="email" placeholder="Email Address" value={values.email} onChange={handleChange} onBlur={handleBlur} aria-label="Your email"/>
                                 <Select name="pack" value={values.pack} onChange={handleChange} onBlur={handleBlur} aria-label="Select pack">
                                     <Option value="basic" >Basic Pack Free</Option>
-                                    <Option value="pro" selected>Pro Pack $9.99</Option>
+                                    <Option value="pro">Pro Pack $9.99</Option>
                                     <Option value="ultimate">Ultimate Pack $19.99</Option>
                                 </Select>
                                 <Input type="text" name="tel" placeholder="Phone Number" value={values.tel} onChange={handleChange} onBlur={handleBlur} aria-label="Your phone number"/>
