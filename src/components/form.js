@@ -37,11 +37,10 @@ const InputsContainer = styled.div`
 `
 
 function Input(props) {
-    const [meta] = useField(props);
+    const [field, meta] = useField(props);
 
     return(
-        <>
-            
+        <>  
             {meta.touched && meta.error ? (
                 <InputError {...props} />
             ) : <InputSucceed {...props} />}
@@ -122,7 +121,8 @@ function Form(props) {
                     tel: "",
                     company: ""  
                 }}
-                validationSchema={object({
+                
+                validationSchema={object().shape({
                     name: string()
                         .min(3, 'Must be at least 3 characters')
                         .max(15, 'Must be 15 characters or less')
@@ -142,7 +142,7 @@ function Form(props) {
                         resetForm();
                         setSubmitting(false);
 
-                    }, 2000);
+                    }, 400);
                 }}
                 >
                 {({
