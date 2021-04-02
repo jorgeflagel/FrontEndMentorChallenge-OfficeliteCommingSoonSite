@@ -92,7 +92,7 @@ const CardStyled = styled(Card)`
     justify-content: center;
     border-radius: 15px;
     ${props => {
-        switch(props.variant){
+        switch(props.type){
             case("light"):
                 return css`
                     background-color: ${props.theme.colorSecondary};

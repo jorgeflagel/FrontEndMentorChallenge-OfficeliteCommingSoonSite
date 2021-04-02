@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import Card from './card';
 import ComingSoon from './comingSoon';
@@ -158,7 +158,7 @@ const Footer = styled.footer`
 
 
 function Home(props) {
-
+  const history = useHistory();
 
   return(
     <HomeContainer>
@@ -172,9 +172,11 @@ function Home(props) {
                 <Subtitle>Say goodbye to inefficient juggling of multiple apps, teams, 
                 and projects. Officelite is the new collaboration platform built with 
                 an intuitive interface to improve productivity.</Subtitle>
-                <Link to="./sign-up">
-                    <Button variant={1}>Get Started</Button>
-                </Link>
+                <Button variant={1} onClick={() => {
+                  props.setPack("basic");
+                  history.push("/sign-up");
+                  }} 
+                  >Get Started</Button>
             </HeaderMain>
         </Header>
         <Cards id="cards">
@@ -184,9 +186,11 @@ function Home(props) {
         </Cards>
         <Footer>
             <ComingSoon type="light"/>
-            <Link to="/sign-up">
-                <Button variant={1} onClick={() => props.setPack("basic")}>Get Started</Button>
-            </Link>
+                <Button variant={1} onClick={() => {
+                  props.setPack("basic");
+                  history.push("/sign-up");
+                  }} 
+                  >Get Started</Button>
         </Footer>
     </HomeContainer>
     );

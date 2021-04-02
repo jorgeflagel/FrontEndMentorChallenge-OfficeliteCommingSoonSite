@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+
 
 import styled, { css } from "styled-components";
 import devices from "../assets/breakpoints";
@@ -108,6 +109,8 @@ const Users = styled.p`
 
 
 export default function Card(props){
+    const history = useHistory();
+
     return(
         <CardContainer {...props}>
             <CardHeader>
@@ -120,9 +123,10 @@ export default function Card(props){
                 <p>{props.storage}</p>
                 <p>{props.extras}</p>
             </CardBody>
-            <Link to="/sign-up">
-                <Button variant={props.buttonVariant} onClick={() => props.selectPack(props.suscriptionType)}>Try for Free</Button>
-            </Link>
+                <Button variant={props.buttonVariant} onClick={() => {
+                    props.selectPack(props.suscriptionType);
+                    history.push("/sign-up");}}
+                    >Try for Free</Button>
         </CardContainer>
     );
 }
